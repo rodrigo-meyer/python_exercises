@@ -18,13 +18,13 @@ life_expec = 81
 #The Salary Percentage condition
 if (item_price / part_times) >= ((client_sal / 100) * pc_max_sal):
     print('The partial payment is: € {:.2f} per month.'.format(part_value))
-    print('Its more than:     {}% (€ {:.2f}) of your monthly salary € ({:.2f}).'.format(pc_max_sal, (client_sal / 100) * pc_max_sal, client_sal))
+    print('Its more than:     {}% (€ {:.2f}) of your monthly salary (€ {:.2f}).'.format(pc_max_sal, (client_sal / 100) * pc_max_sal, client_sal))
     print('\033[0;30;41m Sorry. Your salary is not adequate for this financing. \033[m')
     print(' ')
 
 else:
     print('The partial payment is: € {:.2f} per month.'.format(part_value))
-    print('Its less than:     {}% (€ {:.2f}) of your monthly salary € ({:.2f}).'.format(pc_max_sal, ((client_sal / 100) * pc_max_sal), client_sal))
+    print('Its less than:     {}% (€ {:.2f}) of your monthly salary (€ {:.2f}).'.format(pc_max_sal, ((client_sal / 100) * pc_max_sal), client_sal))
     print('\033[0;30;42m Your salary is adequate for this financing. \033[m')
     print(' ')
 
