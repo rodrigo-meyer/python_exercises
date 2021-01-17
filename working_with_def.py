@@ -1,8 +1,9 @@
 from os import system
 from time import sleep
+from sys import version
 
-interpreter = "Python 3.8"
-editor = "PyCharm"
+interpreter = "Python " + version[version.find('3.'):5]
+editor = "PyCharm Community"
 
 class colors:
     header = '\n\033[43m'
@@ -18,7 +19,7 @@ help_text = "An error message is sent whenever data is reported incorrectly " \
             "possibility of an unexpected program failure. If you think this " \
             "was the case, please contact our support by email: " \
             "suporte@email_fictional.com."
-end_text = f"End\n Program developed in {interpreter}, by {editor}."
+end_text = f"End\n Program developed with {interpreter} and {editor}."
 error_text = "You entered a wrong option."
 error_calc = "You entered an invalid input."
 
