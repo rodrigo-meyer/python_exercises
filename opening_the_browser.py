@@ -1,5 +1,6 @@
 import webbrowser
 
+# Este menino adora coisas coloridas!
 search_original = str(input("\nSearch in "
                             "\033[1;34mG\033[m"
                             "\033[1;31mo\033[m"
